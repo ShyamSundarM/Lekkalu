@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561546540626",
+    "project_id": "lekkalu-b12b7",
+    "storage_bucket": "lekkalu-b12b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561546540626:android:e77bcc04e7867d9b28918b",
+        "android_client_info": {
+          "package_name": "com.lekkalu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVXsZlOx1KKPbNjt4thTmyk5M5rH-4PUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
