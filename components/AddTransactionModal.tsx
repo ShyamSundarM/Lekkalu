@@ -20,7 +20,7 @@ type DateFieldType = {
   value: Date;
   error: boolean;
 };
-type TxnRouteProp = RouteProp<NavParamList, 'transfers'>;
+export type TxnRouteProp = RouteProp<NavParamList, 'transfers'>;
 
 function AddTransactionModal(props: Props) {
   const route = useRoute<TxnRouteProp>();

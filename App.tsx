@@ -6,6 +6,7 @@ import {Appbar, IconButton} from 'react-native-paper';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Transfers from './components/Transfers';
+import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
 
 export type NavParamList = {
   debtors: undefined;
@@ -20,13 +21,14 @@ function App(): React.JSX.Element {
       <Stack.Navigator
         initialRouteName="debtors"
         screenOptions={{
+          animation: 'fade_from_bottom',
           statusBarColor: '#2c5670',
           headerStyle: {backgroundColor: '#2c5670'},
           headerTintColor: '#ffffff',
         }}>
         <Stack.Screen
           name="debtors"
-          component={Debtors}
+          component={gestureHandlerRootHOC(Debtors)}
           options={{
             title: 'Debtors',
           }}
